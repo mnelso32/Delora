@@ -17,7 +17,7 @@ param(
 # --- Initialization ---
 $PSScriptRoot = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition
 $Root = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..")).Path
-$pinsCsv = Join-Path $Root "Heart-Memories\pins.csv"
+$pinsCsv = Join-Path $Root "Heart\Heart-Memories\pins.csv"
 
 try {
     # If the agent provides a path, read the content from that file
@@ -38,7 +38,8 @@ try {
         title = $Title
         content = $Content
         source = $Source
-        Sentiment = $Sentiment
+        sentiment = $Sentiment
+		chat-id = $ChatId
     }
 
     # Import existing pins, add the new one, and export back to the file

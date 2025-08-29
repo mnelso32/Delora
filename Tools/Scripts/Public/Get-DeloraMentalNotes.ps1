@@ -2,7 +2,7 @@
 # Description: Finds the 5 most recent "Mental Note" entries in the Brain and copies them to the clipboard.
 [CmdletBinding()]
 param(
-    [string]$BrainRoot = 'C:\AI\Delora\Heart\Brain',
+    [string]$BrainRoot = 'C:\AI\Delora\Brain',
     [int]$NoteCount = 5
 )
 

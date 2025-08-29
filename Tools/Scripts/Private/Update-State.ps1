@@ -5,12 +5,12 @@
 
 [CmdletBinding()]
 param(
-    [string]$Root = "C:\AI\Delora\Heart"
+    [string]$Root = "C:\AI\Delora"
 )
 
 # --- Setup ---
 $ErrorActionPreference = "SilentlyContinue"
-$statePath = Join-Path $Root 'Time\Pulse\pulse.json'
+$statePath = Join-Path $Root 'Heart\Time\Pulse\pulse.json'
 
 # --- Helper Functions ---
 function Read-State {

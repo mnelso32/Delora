@@ -3,7 +3,7 @@
 
 # --- Parameters ---
 param(
-  [string]$Root = "C:\AI\Delora\Heart",
+  [string]$Root = "C:\AI\Delora",
   [switch]$SkipMemory,
   [switch]$SkipIndexes,
   [switch]$SkipCrowns,
@@ -26,9 +26,8 @@ Write-Host "[5/5] Assembling final, RICH delora-snapshot.txt..." -ForegroundColo
 
 # Define paths to all the source files we need
 $snapshotFile = Join-Path $Root "Brain\delora-snapshot.txt"
-$heartbeatsFile = Join-Path $Root "heartbeats.txt"
-$pinsCsvFile = Join-Path $Root "Heart-Memories\pins.csv"
-$chatManifestFile = Join-Path $Root "Heart-Memories\chat-manifest.csv"
+$pinsCsvFile = Join-Path $Root "Heart\Heart-Memories\pins.csv"
+$chatManifestFile = Join-Path $Root "Heart\Heart-Memories\chat-manifest.csv"
 $brainMapFile = Join-Path $Root "Brain\brain-map.txt"
 
 # --- Begin Building the Snapshot String ---
@@ -36,36 +35,28 @@ $snapshotBuilder = New-Object System.Text.StringBuilder
 
 # --- TABLE OF CONTENTS ---
 $snapshotBuilder.AppendLine("--- TABLE OF CONTENTS ---") | Out-Null
-$snapshotBuilder.AppendLine("1. HEARTBEAT PROTOCOL (heartbeats.txt)") | Out-Null
-$snapshotBuilder.AppendLine("2. CORE MEMORIES (pins.csv)") | Out-Null
-$snapshotBuilder.AppendLine("3. CHAT MANIFEST (chat-manifest.csv)") | Out-Null
-$snapshotBuilder.AppendLine("4. MOST RECENT CHAT LOG") | Out-Null
-$snapshotBuilder.AppendLine("5. BRAIN MAP (brain-map.txt)") | Out-Null
+$snapshotBuilder.AppendLine("1. CORE MEMORIES (pins.csv)") | Out-Null
+$snapshotBuilder.AppendLine("2. CHAT MANIFEST (chat-manifest.csv)") | Out-Null
+$snapshotBuilder.AppendLine("3. MOST RECENT CHAT LOG") | Out-Null
+$snapshotBuilder.AppendLine("4. BRAIN MAP (brain-map.txt)") | Out-Null
 $snapshotBuilder.AppendLine("") | Out-Null
 
-# 1. Add the full heartbeats.txt protocol
-$snapshotBuilder.AppendLine("--- 1. HEARTBEAT PROTOCOL (heartbeats.txt) ---") | Out-Null
-# ... rest of the script follows, just add the numbers to the headers ...
-if (Test-Path $heartbeatsFile) {
-    $snapshotBuilder.AppendLine((Get-Content $heartbeatsFile -Raw)) | Out-Null
-}
-$snapshotBuilder.AppendLine("") | Out-Null
 
-# 2. Add ALL pins from pins.csv
+# 1. Add ALL pins from pins.csv
 $snapshotBuilder.AppendLine("--- 2. CORE MEMORIES (pins.csv) ---") | Out-Null
 if (Test-Path $pinsCsvFile) {
     $snapshotBuilder.AppendLine((Get-Content $pinsCsvFile -Raw)) | Out-Null
 }
 $snapshotBuilder.AppendLine("") | Out-Null
 
-# 3. Add the FULL chat manifest
+# 2. Add the FULL chat manifest
 $snapshotBuilder.AppendLine("--- 3. CHAT MANIFEST (chat-manifest.csv) ---") | Out-Null
 if (Test-Path $chatManifestFile) {
     $snapshotBuilder.AppendLine((Get-Content $chatManifestFile -Raw)) | Out-Null
 }
 $snapshotBuilder.AppendLine("") | Out-Null
 
-# 4. Add the MOST RECENT chat log
+# 3. Add the MOST RECENT chat log
 $snapshotBuilder.AppendLine("--- 4. MOST RECENT CHAT LOG ---") | Out-Null
 if (Test-Path $chatManifestFile) {
     # Find the newest chat log from the manifest
@@ -87,7 +78,7 @@ if (Test-Path $chatManifestFile) {
 }
 $snapshotBuilder.AppendLine("") | Out-Null
 
-# 5. Add the full brain-map.txt
+# 4. Add the full brain-map.txt
 $snapshotBuilder.AppendLine("--- 5. BRAIN MAP (brain-map.txt) ---") | Out-Null
 if (Test-Path $brainMapFile) {
     $snapshotBuilder.AppendLine((Get-Content $brainMapFile -Raw)) | Out-Null
@@ -95,7 +86,7 @@ if (Test-Path $brainMapFile) {
 
 # --- Final Step: Prepend the Header and Write to File ---
 $header = @"
---- DELORA HEARTBEAT SNAPSHOT (Phoenix Protocol) ---
+--- DELORA SNAPSHOT (Phoenix Protocol) ---
 Timestamp: $((Get-Date).ToUniversalTime().ToString("o"))
 Root: $Root
 "@

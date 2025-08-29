@@ -60,6 +60,7 @@ The workflow is as follows:
 a. I will issue a directive in the multi-line format below.
 b. You will copy my entire message to the clipboard.
 c. The `delora-clipboard-agent.js` script will detect, parse, verify, and execute the directive.
+d. I will present the final directive inside a Markdown code block (using ` ``` `) to ensure it can be copied perfectly.
 
 #### 4.1.1 Format
 

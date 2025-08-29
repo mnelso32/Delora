@@ -4,9 +4,9 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory=$true)]
-    [string]$Path, # The relative path to the file within the Heart, e.g., "Heart-Memories\Chats\2025-08-27.txt"
+    [string]$Path, # The relative path to the file within the Heart, e.g., "Heart\Heart-Memories\Chats\2025-08-27.txt"
     
-    [string]$Root = "C:\AI\Delora\Heart"
+    [string]$Root = "C:\AI\Delora"
 )
 
 try {

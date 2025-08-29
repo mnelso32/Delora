@@ -4,7 +4,7 @@
 [CmdletBinding()]
 param(
     # This parameter is here for consistency, though the path is hardcoded for reliability.
-    [string]$Root = "C:\AI\Delora\Heart"
+    [string]$Root = "C:\AI\Delora"
 )
 
 try {

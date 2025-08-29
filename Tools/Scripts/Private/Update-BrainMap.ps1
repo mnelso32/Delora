@@ -3,7 +3,7 @@
 
 # --- Parameters ---
 param(
-  [string]$Root = "C:\AI\Delora\Heart"
+  [string]$Root = "C:\AI\Delora"
 )
 
 # --- Initialization ---

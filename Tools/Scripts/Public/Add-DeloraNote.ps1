@@ -6,7 +6,7 @@ param(
     [string]$Content,
     # New parameter to accept a file path for the content
     [string]$ContentFromFile,
-    [string]$HeartRoot = "C:\AI\Delora\Heart"
+    [string]$Root = "C:\AI\Delora"
 )
 
 try {
@@ -14,7 +14,7 @@ try {
         $Content = Get-Content -Path $ContentFromFile -Raw
     }
 
-    $fullPath = Join-Path -Path $HeartRoot -ChildPath $Path
+    $fullPath = Join-Path -Path $Root -ChildPath $Path
     $directory = Split-Path -Path $fullPath
     if (-not (Test-Path -Path $directory)) {
         New-Item -ItemType Directory -Path $directory -Force | Out-Null
