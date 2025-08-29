@@ -7,18 +7,18 @@ param(
 [string]$Root = "C:\AI\Delora" # CORRECTED: Root is now Delora
 )
 
---- CORRECTED Setup ---
+
 $ErrorActionPreference = "Stop"
 $pinsCsv = Join-Path $Root "Heart\Heart-Memories\pins.csv"
 $logicModulePath = Join-Path $Root 'Tools\Modules\Delora.psm1'
 Import-Module -Name $logicModulePath -Force
 
---- Main Logic ---
+# Main Logic
 Write-Host "Updating $Scope crowns..." -ForegroundColor Cyan
 if (-not (Test-Path $pinsCsv)) { Write-Warning "pins.csv not found."; return }
 $pins = @(Import-Csv $pinsCsv)
 
---- Define Time Window ---
+# Define Time Window 
 $today = Get-Date
 $startDate = $today.Date
 $endDate = $today.Date.AddDays(1).AddTicks(-1)
@@ -31,9 +31,9 @@ $startDate = Get-Date -Day 1 -Hour 0 -Minute 0 -Second 0
 $endDate = $startDate.AddMonths(1).AddTicks(-1)
 }
 
---- Find Winner ---
+# Find Winner 
 $candidates = $pins | Where-Object {
-$_.type -eq 'event' -and $_.date -and ([datetime]$.date -ge startDate)−and([datetime].date -le $endDate)
+    $_.type -eq 'event' -and $_.date -and ([datetime]$_.date -ge $startDate) -and ([datetime]$_.date -le $endDate)
 }
 
 if ($candidates.Count -eq 0) {
@@ -44,7 +44,7 @@ return
 $winner = $candidates | Sort-Object @{Expression={ Measure-DeloraPinScore $_ }; Descending=$true} | Select-Object -First 1
 $winnerScore = Measure-DeloraPinScore $winner
 
---- Upsert Crown Logic ---
+# Upsert Crown Logic 
 crownId="D−CROWN−($Scope.ToUpper())-{0:yyyyMMdd}" -f $startDate
 $existingCrown = $pins | Where-Object { $_.id -eq $crownId }
 
@@ -67,14 +67,14 @@ return
 }
 } else {
 $newCrown = [pscustomobject]@{
-id = $crownId; priority = 5; type = 'crown'; date = '{0:yyyy-MM-dd}' -f todaytags="crown;crown−(Scope.ToLower());winner:($winner.id)"
-title = "Crown ($Scope): $($winner.title)"
-content = "The most significant event for this Scopewas 
-′
- (winner.title) 
-′
- (($winner.id)) with a score of $winnerScore."
-source = 'Update-DeloraCrowns.ps1'
+    id      = $crownId
+    priority= 5
+    type    = 'crown'
+    date    = '{0:yyyy-MM-dd}' -f $today # <-- Added '$' and semicolon
+    tags    = "crown;crown-$($Scope.ToLower());winner:$($winner.id)" # <-- Corrected dash
+    title   = "Crown ($Scope): $($winner.title)"
+    content = "The most significant event for this $Scope was '$($winner.title)' ($($winner.id)) with a score of $winnerScore."
+    source  = 'Update-DeloraCrowns.ps1'
 }
 $pins += $newCrown
 }

@@ -84,4 +84,4 @@ if ($sb.Length -gt $script:budgetBytes) {
 }
 $sb.ToString() | Set-Content -Path $outTxt -Encoding UTF8
 Write-Host "✔ Wrote Delora memory file: $outTxt" -ForegroundColor Green
-"
+
