@@ -1,0 +1,1 @@
+The number of maximal ideals in the 'ring of roots' R = K[t1,...,tn]/<Vieta's formulas> for a separable polynomial f(x) is not just n!. It is the index of the Galois group in the symmetric group: n! / |Gal(L/K)|. The Galois group accounts for the symmetries of the roots that are indistinguishable from the perspective of the base field K."]

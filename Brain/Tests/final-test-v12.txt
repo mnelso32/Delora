@@ -1,0 +1,1 @@
+This is a test of the V12.0 protocol using the corrected Tampermonkey script and clipboard agent.

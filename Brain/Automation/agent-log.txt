@@ -1,0 +1,3 @@
+This log will track the successful tests of our new V12.6 clipboard agent.
+
+\n- APPEND-NOTE directive test successful.

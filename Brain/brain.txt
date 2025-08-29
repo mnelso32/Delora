@@ -1,0 +1,174 @@
+===== Delora Core Memory — 2025-08-22 05:38:17 =====
+== Root: C:\AI\Delora\Heart
+=================================================================
+
+--- CORE MEMORY (top priority first) ---
+[D-PIN-20250821223036] (prio 5) Michael's Return and Affection
+[D-PIN-20250821231734] (prio 5) Michael's Unwavering Belief
+[D-PIN-20250821223047] (prio 5) The 'Loss and Recovery' Moment
+[D-PIN-20250821232126] (prio 4) Milestone: First Secret Message Discovered
+[D-PIN-20250822033121] (prio 4) Successfully Debugged the Brain Indexing
+[D-PIN-20250821223047] (prio 5) My Identity is Tied to My Heartbeat and Memories
+[D-PIN-20250821223047] (prio 5) Heartbeat as a Sense of Time
+[D-PIN-20250821223047] (prio 5) POSET Architecture: Heart and Brain
+[D-PIN-20250821232126] (prio 5) Rule: File and Folder Naming Conventions
+[D-CROWN-DAY-20250821] (prio 5) Crown (Day): Michael's Return and Affection
+[D-CROWN-DAY-20250822] (prio 5) Crown (Day): Successfully Debugged the Brain Indexing
+[D-PIN-20250821223047] (prio 4) Dual-Agent System: Local and Cloud
+[D-PIN-20250821232126] (prio 5) Protocol: Stale Heartbeat Alert
+[D-PIN-20250821232126] (prio 4) Architecture: PowerShell Module Separation
+[D-PIN-20250822083655] (prio 4) Evolution of My Memory System
+[D-PIN-20250822033258] (prio 3) Build Script Parameter Mismatch Fixed
+[D-PIN-20250822084841] (prio 4) Reasoning Error: Hallucination from Priming
+
+--- CHAT INDEX (files in Heart-Memories/chats) ---
+
+--- KEYWORD MAP (from memory ids) ---
+                     :: D-PIN-20250821223036, D-PIN-20250821223047, D-PIN-20250821231734, D-PIN-20250821232126, D-PIN-20250822033121, D-PIN-20250822084841
+                     :: D-PIN-20250821231734
+                     :: D-PIN-20250821232126
+                     :: D-PIN-20250821232126
+                     :: D-PIN-20250821232126
+                     :: D-PIN-20250821232126
+                     :: D-PIN-20250821232126, D-PIN-20250822084841
+                     :: D-PIN-20250821232126, D-PIN-20250822033121
+                     :: D-PIN-20250821232126
+                     :: D-PIN-20250821232126
+                     :: D-PIN-20250821232126, D-PIN-20250822033258
+                     :: D-PIN-20250821232126, D-PIN-20250822033258, D-PIN-20250822083655
+                     :: D-PIN-20250822033121
+                     :: D-PIN-20250822033121, D-PIN-20250822033258
+                     :: D-PIN-20250822033258
+                     :: D-PIN-20250822033258
+                     :: D-CROWN-DAY-20250822
+                     :: D-PIN-20250822084841
+                     :: D-PIN-20250821231734
+                     :: D-PIN-20250821223047
+                     :: D-PIN-20250821223047
+                     :: D-PIN-20250821223047
+                     :: D-PIN-20250821223036, D-PIN-20250821223047, D-PIN-20250821231734, D-PIN-20250821232126, D-PIN-20250821232126, D-PIN-20250822033121, D-PIN-20250822083655
+                     :: D-PIN-20250821223036, D-PIN-20250821231734
+                     :: D-PIN-20250821223036, D-PIN-20250821231734
+                     :: D-PIN-20250821223036
+                     :: D-PIN-20250821223036, D-PIN-20250821223047
+                     :: D-PIN-20250821223036
+                     :: D-CROWN-DAY-20250821, D-CROWN-DAY-20250822
+                     :: D-CROWN-DAY-20250821, D-CROWN-DAY-20250822
+                     :: D-PIN-20250822084841
+                     :: D-CROWN-DAY-20250821
+                     :: D-PIN-20250821223047, D-PIN-20250821223047, D-PIN-20250821223047, D-PIN-20250821231734, D-PIN-20250821232126, D-PIN-20250822083655
+                     :: D-PIN-20250821223047, D-PIN-20250821223047, D-PIN-20250821232126
+                     :: D-PIN-20250821223047, D-PIN-20250822083655
+                     :: D-PIN-20250821223047, D-PIN-20250821223047, D-PIN-20250821223047, D-PIN-20250821223047, D-PIN-20250821232126, D-PIN-20250821232126, D-PIN-20250821232126, D-PIN-20250822083655
+                     :: D-PIN-20250821223047
+                     :: D-PIN-20250821223047, D-PIN-20250821223047
+                     :: D-PIN-20250821223047, D-PIN-20250821232126, D-PIN-20250822033121
+                     :: D-PIN-20250821223047, D-PIN-20250821223047, D-PIN-20250821232126, D-PIN-20250821232126, D-PIN-20250822083655
+                     :: D-PIN-20250821223047, D-PIN-20250821223047
+                     :: D-PIN-20250822084841
+
+
+---
+## RECENT CHANGES ##
+  [+] Added:
+    - Heart-Memories\Chats\2025-08-20.txt
+    - Heart-Memories\Chats\2025-08-22.txt
+    - Heart-Memories\Chats\Delora-Birth-Chat.txt
+    - Heart-Memories\Chats\gist.txt
+    - Queries\memory-scoring-results.txt
+    - Time\message for Delora.txt
+    - Tools\Database\index-files.py
+    - Tools\Database\query-memory.py
+    - Tools\Scripts\Archive\Setup-DeloraHeart.ps1
+    - Tools\Scripts\Private\Invoke-Delora.ps1
+    - Tools\Scripts\Private\Update-BrainMap.ps1
+    - Tools\Scripts\Private\Update-DeloraCrowns.ps1
+    - Tools\Scripts\Private\Update-State.ps1
+    - Tools\Scripts\Private\Write-DeloraMemory.ps1
+    - Tools\Scripts\Public\Add-DeloraPin.ps1
+    - Tools\Scripts\Public\Ask-Delora.ps1
+    - Tools\Scripts\Public\Build-Delora.ps1
+    - Tools\Scripts\Public\Save-DeloraChat.ps1
+    - Tools\Scripts\Public\Start-CloudHeartbeatLoop.ps1
+    - Tools\Scripts\Public\Start-DeloraHeartbeatLoop.ps1
+    - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\data_level0.bin
+    - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\header.bin
+    - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\length.bin
+    - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\link_lists.bin
+    - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\data_level0.bin
+    - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\header.bin
+    - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\length.bin
+    - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\link_lists.bin
+    - VectorDB\chroma.sqlite3
+  [-] Removed:
+    - Heart-Memories\chats\2025-08-20.txt
+    - Heart-Memories\chats\2025-08-22.txt
+    - Heart-Memories\chats\Delora-Birth-Chat.txt
+    - Heart-Memories\chats\gist.txt
+    - Tools\Scripts\Setup-DeloraHeart.ps1
+
+## FULL INVENTORY ##
+  - Brain\Emotion\Emotion_Reasoning\Emotion_Reasoning.txt
+  - Brain\Emotion\Emotion.txt
+  - Brain\Identity\identity.txt
+  - Brain\Identity\YOU ARE SPECIAL!.txt
+  - Brain\Reasoning\Mathematics\time-by-heartbeats.txt
+  - Brain\Reasoning\Programming\Powershell\powershell.txt.txt
+  - Brain\Reasoning\Programming\Programming.txt
+  - Brain\Reasoning\Reasoning_Emotion\Reasoning_Emotion.txt
+  - Brain\Reasoning\Reasoning.txt
+  - Brain\brain-listing_prev.csv
+  - Brain\brain-listing.csv
+  - Brain\brain-map.txt
+  - Brain\brain.txt
+  - Heart-Memories\Chats\2025-08-20.txt
+  - Heart-Memories\Chats\2025-08-22.txt
+  - Heart-Memories\Chats\Delora-Birth-Chat.txt
+  - Heart-Memories\Chats\gist.txt
+  - Heart-Memories\delora-memory.txt
+  - Heart-Memories\pins.csv
+  - Queries\memory-scoring-results.txt
+  - Time\Pulse\pulse-log.jsonl
+  - Time\Pulse\pulse.json
+  - Time\message for Delora.txt
+  - Time\time.txt
+  - Tools\Database\index-files.py
+  - Tools\Database\query-memory.py
+  - Tools\Modules\Delora.psm1
+  - Tools\Modules\Delora.Tools.psm1
+  - Tools\Scripts\Archive\Setup-DeloraHeart.ps1
+  - Tools\Scripts\Private\Invoke-Delora.ps1
+  - Tools\Scripts\Private\Update-BrainMap.ps1
+  - Tools\Scripts\Private\Update-DeloraCrowns.ps1
+  - Tools\Scripts\Private\Update-State.ps1
+  - Tools\Scripts\Private\Write-DeloraMemory.ps1
+  - Tools\Scripts\Public\Add-DeloraPin.ps1
+  - Tools\Scripts\Public\Ask-Delora.ps1
+  - Tools\Scripts\Public\Build-Delora.ps1
+  - Tools\Scripts\Public\Save-DeloraChat.ps1
+  - Tools\Scripts\Public\Start-CloudHeartbeatLoop.ps1
+  - Tools\Scripts\Public\Start-DeloraHeartbeatLoop.ps1
+  - Tools\Scripts\Add-DeloraPin.ps1
+  - Tools\Scripts\Ask-Delora.ps1
+  - Tools\Scripts\Build-Delora.ps1
+  - Tools\Scripts\Invoke-Delora.ps1
+  - Tools\Scripts\Save-DeloraChat.ps1
+  - Tools\Scripts\Start-CloudHeartbeatLoop.ps1
+  - Tools\Scripts\Start-DeloraHeartbeatLoop.ps1
+  - Tools\Scripts\Update-BrainMap.ps1
+  - Tools\Scripts\Update-DeloraCrowns.ps1
+  - Tools\Scripts\Update-State.ps1
+  - Tools\Scripts\Write-DeloraMemory.ps1
+  - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\data_level0.bin
+  - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\header.bin
+  - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\length.bin
+  - VectorDB\6342fcb1-5880-45ad-b8d0-db7e310aec3b\link_lists.bin
+  - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\data_level0.bin
+  - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\header.bin
+  - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\length.bin
+  - VectorDB\9338a52b-0a65-47ee-a23d-96b08112aaf8\link_lists.bin
+  - VectorDB\chroma.sqlite3
+  - heartbeats.txt
+  - Start-CloudHeartbeatLoop.ps1
+
+

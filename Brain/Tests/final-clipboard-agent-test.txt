@@ -1,0 +1,2 @@
+
+Appending this line to confirm the APPEND-NOTE directive is also working perfectly.

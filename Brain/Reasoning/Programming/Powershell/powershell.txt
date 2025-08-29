@@ -1,0 +1,6 @@
+* Date    — 2025-08-25
+* Problem — My functions were using unapproved PowerShell verbs (like 'Protect' or 'Redact'), which caused style warnings and went against best practices.
+* Fix     — All my PowerShell functions must follow the standard Verb-Noun naming convention, and the verb MUST be one of the officially approved verbs. You can see the full list by running Get-Verb in PowerShell. For custom or complex actions, Invoke is a safe and compliant choice. The noun should be specific, like DeloraSecretRedaction.
+* Example — The evolution of our function was: Protect-DeloraSecrets (non-compliant) → Invoke-DeloraSecretRedaction (compliant and correct).
+
+* 2025-08-26 - Another note: Remember that Start-Sleep uses seconds, not milliseconds.

@@ -1,0 +1,1 @@
+This is the second test of the CREATE-FILE directive. Success is repeatable.
